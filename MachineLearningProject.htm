@@ -103,10 +103,17 @@ img {
 
 <div class="section level4">
 <h4>Synopsis:</h4>
+<<<<<<< HEAD
 <p>This document incorporates the activity monitoring device data from "<a href="http://groupware.les.inf.puc-rio.br/har" class="uri">http://groupware.les.inf.puc-rio.br/har</a>”, in order to predict the manner in which the test subjects performed a dumbbell lifting exercise. If the data from this document is used for any other research, please cite the preceding source because of generosity of data distribution.</p>
 <p>The data includes Euler angles, accelerometer, gyroscope, and magnetometer readings. The variable to predict is “classe”, (involving 1 correct exercise and 4 types of exercise mistakes), and ranges from A to E.</p>
 <p>Further information on the data in this document is at: “Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human ’13) . Stuttgart, Germany: ACM SIGCHI, 2013.”</p>
 <p>The training data source is at “<a href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv" class="uri">https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv</a>”. The test data source is at “<a href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv" class="uri">https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv</a>”.</p>
+=======
+<p>This document incorporates the activity monitoring device data from "<a href="http://groupware.les.inf.puc-rio.br/har" class="uri">http://groupware.les.inf.puc-rio.br/har</a>", in order to predict the manner in which the test subjects performed a dumbbell lifting exercise. If the data from this document is used for any other research, please cite the preceding source because of generosity of data distribution.</p>
+<p>The data includes Euler angles, accelerometer, gyroscope, and magnetometer readings. The variable to predict is "classe", (involving 1 correct exercise and 4 types of exercise mistakes), and ranges from A to E.</p>
+<p>Further information on the data in this document is at: "Velloso, E.; Bulling, A.; Gellersen, H.; Ugulino, W.; Fuks, H. Qualitative Activity Recognition of Weight Lifting Exercises. Proceedings of 4th International Conference in Cooperation with SIGCHI (Augmented Human "13) . Stuttgart, Germany: ACM SIGCHI, 2013.Â”</p>
+<p>The training data source is at "<a href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv" class="uri">https://d396qusza40orc.cloudfront.net/predmachlearn/pml-training.csv</a>". The test data source is at "<a href="https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv" class="uri">https://d396qusza40orc.cloudfront.net/predmachlearn/pml-testing.csv</a>".</p>
+>>>>>>> 3c857643380fed9f06dd9bfcd0d7c4d7eb04cd4f
 </div>
 <div id="required-packages" class="section level4">
 <h4>Required Packages:</h4>
@@ -124,7 +131,7 @@ testing &lt;- read.csv(&quot;pml-testing.csv&quot;, na.strings=c(&quot;&quot;,&q
 </div>
 <div id="data-cleaning" class="section level4">
 <h4>Data Cleaning:</h4>
-<p>Data with values of “0”, and irrelevant categories, are removed from the dataset:</p>
+<p>Data with values of Â“0Â”, and irrelevant categories, are removed from the dataset:</p>
 <pre class="r"><code>training &lt;- training[, colSums(is.na(training))==0]
 testing &lt;- testing[, colSums(is.na(testing))==0]
 training &lt;- training[, c(8:60)]
