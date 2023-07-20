@@ -216,7 +216,27 @@ Email: <a href="mailto:johnakwei1@gmail.com" target="_blank">johnakwei1@gmail.co
 https://polygonscan.com</a></p>
 <p>ContextBase Funding: <a href="https://fundly.com/contextbase" target="_blank">https://fundly.com/contextbase</a></p>
 <p>Projects: <a href="http://www.rpubs.com/johnakwei" target="_blank">http://www.rpubs.com/johnakwei</a></p></h3>
-<p><button type="button" download="ContextBase - White Paper.pdf">Download Whitepaper</button></p>
+<p>
+<script>
+function DownloadFile(fileName) {
+  // Set the File URL.
+  var url = "Files/" + fileName;
+
+  // Create XMLHTTP Request.
+  var xhr = new XMLHttpRequest();
+
+  // Set the request method and the file URL.
+  xhr.open("GET", url, true);
+
+  // Set the request header to indicate that we want to download the file.
+  xhr.setRequestHeader("Content-Disposition", "attachment; filename=" + fileName);
+
+  // Send the request.
+  xhr.send();
+}
+</script>
+<button type="button" onclick="DownloadFile('ContextBase - White Paper.pdf')">Download Whitepaper</button>
+</p>
 </div></section>
 
 <!-- Certifications -->
