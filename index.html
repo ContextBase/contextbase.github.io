@@ -239,16 +239,12 @@ https://polygonscan.com</a></p>
   </div>
 </footer>
 
-<!-- The key changes:
-
-- Use Bootstrap for responsive navbar, grids, cards and forms 
-- Add carousel for images
-- Improve styling and spacing with sections, bg colors, py-5 etc
-- Simplify content
-- Use Unsplash images for demo
-- Add contact form
-
-This improves the overall responsive design, styling, content structure and interactivity. Additional enhancements could be made as well. -->
-
+<script>
+  // Close responsive nav when a nav item is clicked
+  $('.navbar-nav>li>a').on('click', function(){
+    $('.navbar-collapse').collapse('hide');
+  });
+</script>
+  
 </body>
 </html>
