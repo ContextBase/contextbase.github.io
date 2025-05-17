@@ -13,13 +13,23 @@
 </head>
 
 <body>
+<style>
+  body {
+    padding-top: 56px; /* Height of navbar */
+  }
+  
+  /* For smooth scrolling to sections */
+  html {
+    scroll-behavior: smooth;
+  }
+</style>
+
 <!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
   <a class="navbar-brand" href="#">ContextBase</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
-
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav">
       <li class="nav-item active">
